@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Protocols</title>
+    <meta
+      name="description"
+      content="Watch the internet work, packet by packet. Interactive lessons on HTTP, HTTPS, WebSocket, WebRTC, SIP, RTSP, RTMP, QUIC, TCP, UDP, IP, BGP, IPv6, DNS, DNS over HTTPS, DNSSEC, DHCP, ICMP, IGMP and multicast, NTP, Ethernet and switches, PPPoE, Wi-Fi, WPA3, RADIUS and 802.1X, captive portals, SMTP, POP3, IMAP, FTP, SMB, SSH, TLS, proxies, SOCKS5, WireGuard, IPsec and Modbus, with every packet decoded byte by byte."
+    />
+    <meta name="author" content="wahaj-xe" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" content="#fdfdfe" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#060e1b" media="(prefers-color-scheme: dark)" />
+    <link rel="icon" href="./favicon.ico" sizes="16x16 32x32 48x48" />
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
+    <link rel="manifest" href="./site.webmanifest" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Protocols" />
+    <meta property="og:title" content="Protocols" />
+    <meta property="og:description" content="Watch the internet work, packet by packet: interactive lessons from DNS and TCP to TLS, with every packet decoded byte by byte." />
+    <meta property="og:image" content="./og.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <link rel="stylesheet" crossorigin href="/assets/index-CwjpA-vk.css">
+    <script>
+      // Theme initialiser
+      try {
+        const saved = localStorage.getItem('protocol-explorer:theme')
+        const dark = saved ? saved === 'dark' : matchMedia('(prefers-color-scheme: dark)').matches
+        document.documentElement.dataset.theme = dark ? 'dark' : 'light'
+        if (saved) for (const meta of document.querySelectorAll('meta[name="theme-color"]')) meta.content = dark ? '#0b1020' : '#fdfdfe'
+      } catch {
+        document.documentElement.dataset.theme = 'light'
+      }
+    </script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" crossorigin src="/assets/index-CNPseYOQ.js"></script>
+    <noscript>
+      <p style="margin: 40px; font: 16px/1.5 ui-monospace, monospace; color: #00238a">
+        Nayatel Protocol Explorer animates packets as they travel the network, so it needs JavaScript. Please turn it on to start the lessons.
+      </p>
+    </noscript>
+  </body>
+</html>
