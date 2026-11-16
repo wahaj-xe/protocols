@@ -1,7 +1,5 @@
 # Protocol Explorer · Learn how the internet works
 
-Exact 1:1 replication of [protocol-explorer-alpha.vercel.app](https://protocol-explorer-alpha.vercel.app/) by Dilum Sanjaya.
-
 ---
 
 ## ⚡ What is included
